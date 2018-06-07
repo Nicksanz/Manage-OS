@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastrar Ordem de Servico</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/ml_deskop.css">
+    <link rel="stylesheet" type="text/css" href="css/ml_update.css">
+    <link rel="stylesheet" type="text/css" href="css/ml.css">
+</head>
+
+<body>
+    <main role="main">
+        <section class="ml-addresses-section">
+            <h1 class="ml-addresses-main-title ">Cadastrar Ordem de Serviço</h1>
+            <form class="ui-form form-with-floating-labels">
+                <!-- Dados pessoais-->
+                <p>Cliente</p>
+                </br>
+                <!-- Inicio Campo Dados Pessoais-->
+                <div class="ml-addresses-card">
+                    <fieldset class="ml-addresses-fieldset">
+                        <div class="u-clearfix">
+                            <!-- Nome Completo-->
+                            <div class="ml-addresses-grid ml-addresses-grid--first-column">
+                                <div class="ui-form__row ">
+                                    <input type="text" id="nomeCompInput" class="ui-form__input ui-form__input--dirty">
+                                    <label class="ui-form__label">Nome Completo</label>
+                                    <span class="ui-form__status-bar"></span>
+                                </div>
+                            </div>
+                            <!-- CPF-->
+                            <div class="ml-addresses-grid ml-addresses-grid--first-column">
+                                <div class="ui-form__row ">
+                                    <input type="number" id="cpfInput" class="ui-form__input ui-form__input--dirty">
+                                    <label class="ui-form__label">C.P.F</label>
+                                    <span class="ui-form__status-bar"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Dados Endereco-->
+                <p>Aparelho</p>
+                </br>
+                <!-- Inicio Campo Endereco-->
+                <div class="ml-addresses-card">
+                    <fieldset class="ml-addresses-fieldset">
+                        <!-- CEP-->
+                        <div class="ml-addresses-grid ml-addresses-grid--first-column">
+                            <div class="ui-form__row ">
+                                <input type="text" id="endCepInput" class="ui-form__input ui-form__input--dirty">
+                                <label class="ui-form__label">Tipo</label>
+                                <span class="ui-form__status-bar"></span>
+                            </div>
+                        </div>
+                        <!-- Cidade-->
+                        <div class="ml-addresses-grid ml-addresses-grid--first-column">
+                            <div class="ui-form__row ">
+                                <input type="text" id="endCidadeInput" class="ui-form__input ui-form__input--dirty">
+                                <label class="ui-form__label">Nome</label>
+                                <span class="ui-form__status-bar "></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- UF-->
+
+                    <fieldset class="ml-addresses-fieldset">
+                        <div class="u-clearfix">
+                            <!-- Rua-->
+                            <div class="ml-addresses-grid ml-addresses-grid--first-column">
+                                <div class="ui-form__row ">
+                                    <input type="text" id="endRuaInput" class="ui-form__input ui-form__input--dirty">
+                                    <label class="ui-form__label">Modelo</label>
+                                    <span class="ui-form__status-bar"></span>
+                                </div>
+                            </div>
+                            <!-- Numero-->
+                            <div class="ml-addresses-grid ml-addresses-grid--second-column ml-addresses-grid--half-column">
+                                <div class="ui-form__row ">
+                                    <input type="text" id="endRuaNInput" class="ui-form__input ui-form__input--dirty">
+                                    <label class="ui-form__label">Marca</label>
+                                    <span class="ui-form__status-bar"></span>
+                                </div>
+                            </div>
+                            <!-- Bairro-->
+                            <div class="ml-addresses-grid ml-addresses-grid--first-column">
+                                <div class="ui-form__row ">
+                                    <input type="text" id="endBairroInput" class="ui-form__input ui-form__input--dirty">
+                                    <label class="ui-form__label">Linha</label>
+                                    <span class="ui-form__status-bar"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bairro-->
+                        <div class="ml-addresses-grid ml-addresses-grid--full-column">
+                            <div class="ui-form__row ">
+                                <input type="text" id="endRefInput" class="ui-form__input ui-form__input--dirty">
+                                <label class="ui-form__label">Descrição</label>
+                                <span class="ui-form__status-bar"></span>
+                            </div>
+                        </div>
+                </div>
+                <!-- Dados de contato-->
+                <p>Serviço</p>
+                </br>
+                <div class="ml-addresses-card ">
+                    <fieldset class="ml-addresses-fieldset">
+                        <div class="u-clearfix ">
+                            <!-- e-mail-->
+                            <div class="ml-addresses-grid ml-addresses-grid--first-column">
+                                <div class="ui-form__row">
+                                    <input type="email" id="emailInput" class="ui-form__input ui-form__input--dirty">
+                                    <label class="ui-form__label">Servico</label>
+                                    <span class="ui-form__status-bar"></span>
+                                </div>
+                            </div>
+                            <!-- telefone-->
+                            <div class="ml-addresses-grid ml-addresses-grid--first-column">
+                                <div class="ui-form__row">
+                                    <input type="number" id="telefoneInput" class="ui-form__input ui-form__input--dirty">
+                                    <label class="ui-form__label">Problema</label>
+                                    <span class="ui-form__status-bar"></span>
+                                </div>
+                            </div>
+
+                            <!-- botao adicionar -->
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="ml-addresses-actions ml-addresses-actions--align-left">
+                    <button class="ui-button ui-button--primary" id="addButton">Adicionar</button>
+                    <a id="cancelButton " href="" class="ui-button ui-button--tertiary ">Cancelar</a>
+                </div>
+
+
+            </form>
+            <footer>
+                <div class="container copyright">© NickSan z. Bug Sistema</div>
+            </footer>
+            <ul id="usersList"></ul>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cliente_add.js"></script>
+
+</body>
+
+</html>
